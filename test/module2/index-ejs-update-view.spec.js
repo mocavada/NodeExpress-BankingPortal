@@ -20,6 +20,7 @@ describe('Update `index` view', () => {
       'The `div` with a class of `container` can not be found.'
     );
     assert(/<h1>\s*<%=\s*title\s*%>\s*<\/h1>/.test(file), 'The `title` variable seems to be missing.');
+    
     assert(
       /<a\s+href=('|")?\/profile('|")?>\s*(P|p)rofile\s*<\/a>/.test(file),
       'The `profile` link seems to be missing.'
